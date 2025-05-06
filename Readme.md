@@ -43,7 +43,7 @@ For clarity, the CBOR shape is given below:
 }
 ```
 
-## 2.2 Serialisation
+## 2.2 Serialization
 
 To serialize the container into bytes, the inner CBOR structure MUST then be serialized into bytes according to the CBOR specification. The resulting bytes MAY be compressed by a supported algorithm, then MAY be encoded with a supported base encoding.
 
@@ -65,7 +65,7 @@ The CBOR bytes MUST be prepended by a single byte header to indicate the selecte
 | 0x4F          | O               | base64 std padding      | gzip           | 
 | 0x50          | P               | base64 url (no padding) | gzip           | 
 
-For clarity, the resulting serialisation is in the form of `<header byte><cbor bytes, optionally compressed, optionally encoded>`.
+For clarity, the resulting serialization is in the form of `<header byte><cbor bytes, optionally compressed, optionally encoded>`.
 
 # 3 FAQ
 
@@ -77,7 +77,7 @@ By not including the CID in the container, the recipient is forced to hash (and 
 
 ## 3.2 Why compress? Why not always compress?
 
-Compression is a relatively demanding operation. As such, using it is a tradeoff between size on the wire and CPU/memory usage, both when writing and reading a container. The transport itself can make compression worthwhile or not: for example, HTTP/2 and HTTP/3 headers are already compressed, but HTTP/1 headers are not. This being highly contextual, the choice is left to the final implementer.
+Compression is a relatively demanding operation. As such, using it is a trade-off between size on the wire and CPU/memory usage, both when writing and reading a container. The transport itself can make compression worthwhile or not: for example, HTTP/2 and HTTP/3 headers are already compressed, but HTTP/1 headers are not. This being highly contextual, the choice is left to the final implementer.
 
 # 4 Implementation recommendations
 
