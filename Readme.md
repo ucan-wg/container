@@ -27,7 +27,7 @@ The UCAN spec itself is transport agnostic. This specification describes how to 
 
 UCAN tokens, regardless of their kind ([Delegation], [Invocation], [Revocation], [Promise]) MUST be first signed and serialized into DAG-CBOR bytes according to their respective specification. As the token's CID is not part of the serialized container, any CID returned by this operation is to be ignored.
 
-All the tokens' bytes MUST be assembled in a [CBOR] array. The ordering of tokens in the array MUST NOT matter. Tokens in the array SHOULD NOT have duplicate entries and SHOULD be ordered bytewise to ensure a deterministic encoding.
+All the tokens' bytes MUST be assembled in a [CBOR] array. The ordering of tokens in the array MUST NOT matter. This array SHOULD NOT have duplicate entries and SHOULD be ordered bytewise to ensure a deterministic encoding.
 
 That array is then inserted as the value under the `ctn-v1` string key, in a CBOR map. There MUST NOT be other keys.
 
