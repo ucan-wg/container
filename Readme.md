@@ -95,7 +95,7 @@ Many thanks to all the [Fission] team and in particular to [Brooklyn Zelenka] fo
 [Brooklyn Zelenka]: https://github.com/expede
 [CBOR]: https://www.rfc-editor.org/rfc/rfc8949.html
 [Consensys]: https://consensys.io/
-[Delegation]: https://github.com/ucan-wg/delegation/tree/v1_ipld
+[Delegation]: https://github.com/ucan-wg/delegation
 [Fission]: https://fission.codes
 [GZIP]: https://datatracker.ietf.org/doc/html/rfc1952
 [Hugo Dias]: https://github.com/hugomrdias
