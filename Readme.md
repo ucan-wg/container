@@ -87,7 +87,7 @@ While it is tempting to write a single implementation to read and write a contai
 
 # 5 Acknowledgments
 
-Many thanks to all the [Fission] team and in particular to [Brooklyn Zelenka] for creating and pushing [UCAN] and other critical pieces like [WNFS], and generally being awesome and supportive people.
+Many thanks to all the Fission team and in particular to [Brooklyn Zelenka] for creating and pushing [UCAN] and other critical pieces like [WNFS], and generally being awesome and supportive people.
 
 <!-- External Links -->
 
@@ -96,13 +96,12 @@ Many thanks to all the [Fission] team and in particular to [Brooklyn Zelenka] fo
 [CBOR]: https://www.rfc-editor.org/rfc/rfc8949.html
 [Consensys]: https://consensys.io/
 [Delegation]: https://github.com/ucan-wg/delegation
-[Fission]: https://fission.codes
 [GZIP]: https://datatracker.ietf.org/doc/html/rfc1952
 [Hugo Dias]: https://github.com/hugomrdias
 [Invocation]: https://github.com/ucan-wg/invocation
 [Michael Muré]: https://github.com/MichaelMure/
 [Promise]: https://github.com/ucan-wg/promise/tree/v1-rc1
-[Revocation]: https://github.com/ucan-wg/revocation/tree/first-draft
+[Revocation]: https://github.com/ucan-wg/revocation
 [UCAN]: https://github.com/ucan-wg/spec
 [WNFS]: https://github.com/wnfs-wg
 [cache poisoning]: https://en.wikipedia.org/wiki/Cache_poisoning
