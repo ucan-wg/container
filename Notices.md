@@ -30,6 +30,14 @@ Specification version: 0.0.0 or later
 
 ---------------------------------------------------------------------------------
 
+Licensee’s name: Alan Shaw
+
+Authorized individual and system identifier: alanshaw
+
+Specification version: 0.0.0 or later
+
+---------------------------------------------------------------------------------
+
 ## Withdrawals
 
 Name of party withdrawing:

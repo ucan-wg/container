@@ -27,7 +27,7 @@ The UCAN spec itself is transport agnostic. This specification describes how to 
 
 UCAN tokens, regardless of their kind ([Delegation], [Invocation], [Revocation], [Promise]) MUST be first signed and serialized into DAG-CBOR bytes according to their respective specification. As the token's CID is not part of the serialized container, any CID returned by this operation is to be ignored.
 
-All the tokens' bytes MUST be assembled in a [CBOR] array. The ordering of tokens in the array MUST NOT matter. This array SHOULD NOT have duplicate entries.
+All the tokens' bytes MUST be assembled in a [CBOR] array. The ordering of tokens in the array MUST NOT matter. This array SHOULD NOT have duplicate entries and MUST be ordered bytewise to ensure a deterministic encoding.
 
 That array is then inserted as the value under the `ctn-v1` string key, in a CBOR map. There MUST NOT be other keys.
 
@@ -87,7 +87,7 @@ While it is tempting to write a single implementation to read and write a contai
 
 # 5 Acknowledgments
 
-Many thanks to all the [Fission] team and in particular to [Brooklyn Zelenka] for creating and pushing [UCAN] and other critical pieces like [WNFS], and generally being awesome and supportive people.
+Many thanks to all the Fission team and in particular to [Brooklyn Zelenka] for creating and pushing [UCAN] and other critical pieces like [WNFS], and generally being awesome and supportive people.
 
 <!-- External Links -->
 
@@ -95,14 +95,13 @@ Many thanks to all the [Fission] team and in particular to [Brooklyn Zelenka] fo
 [Brooklyn Zelenka]: https://github.com/expede
 [CBOR]: https://www.rfc-editor.org/rfc/rfc8949.html
 [Consensys]: https://consensys.io/
-[Delegation]: https://github.com/ucan-wg/delegation/tree/v1_ipld
-[Fission]: https://fission.codes
+[Delegation]: https://github.com/ucan-wg/delegation
 [GZIP]: https://datatracker.ietf.org/doc/html/rfc1952
 [Hugo Dias]: https://github.com/hugomrdias
 [Invocation]: https://github.com/ucan-wg/invocation
 [Michael Muré]: https://github.com/MichaelMure/
 [Promise]: https://github.com/ucan-wg/promise/tree/v1-rc1
-[Revocation]: https://github.com/ucan-wg/revocation/tree/first-draft
+[Revocation]: https://github.com/ucan-wg/revocation
 [UCAN]: https://github.com/ucan-wg/spec
 [WNFS]: https://github.com/wnfs-wg
 [cache poisoning]: https://en.wikipedia.org/wiki/Cache_poisoning
